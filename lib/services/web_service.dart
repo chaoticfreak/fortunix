@@ -4,7 +4,7 @@ import 'package:web_socket_channel/status.dart' as status;
 
 class WebSocketService {
   final _channel = WebSocketChannel.connect(
-    Uri.parse('ws://localhost:8000/ws/chat'), // Use local IP for real device
+    Uri.parse('wss://fortunix.onrender.com/ws/chat'), // Use local IP for real device
   );
 
   Stream<Map<String, dynamic>> get stream =>

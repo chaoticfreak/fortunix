@@ -24,7 +24,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
   void initState() {
     super.initState();
     _channel = WebSocketChannel.connect(
-      Uri.parse('ws://localhost:8000/ws/chat'),
+      Uri.parse('wss://fortunix.onrender.com/ws/chat'),
     );
 
     _channel.stream.listen((data) {

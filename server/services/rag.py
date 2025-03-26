@@ -113,7 +113,8 @@ def text_rag_chain(retriever):
     from langchain_google_genai import ChatGoogleGenerativeAI
     model = ChatGoogleGenerativeAI(
         model=MODEL_NAME,
-        temperature=0.7
+        temperature=0.7,
+        streaming=True,
     )
     chain = (
             {

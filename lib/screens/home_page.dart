@@ -222,13 +222,13 @@ class BackgroundPainter extends CustomPainter {
     canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), gradient);
 
     final dotPaint = Paint()
-      ..color = Colors.white.withOpacity(0.04)
+      ..color = Colors.white.withOpacity(0.08)
       ..style = PaintingStyle.fill;
 
-    double spacing = 20;
+    double spacing = 80;
     for (double x = 0; x < size.width; x += spacing) {
       for (double y = 0; y < size.height; y += spacing) {
-        canvas.drawCircle(Offset(x, y), 1.2, dotPaint);
+        canvas.drawCircle(Offset(x, y), 2.5, dotPaint);
       }
     }
   }

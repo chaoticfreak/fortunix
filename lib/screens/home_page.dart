@@ -222,7 +222,7 @@ class BackgroundPainter extends CustomPainter {
     canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), gradient);
 
     final dotPaint = Paint()
-      ..color = Colors.white.withOpacity(0.08)
+      ..color = Colors.white.withOpacity(0.15)
       ..style = PaintingStyle.fill;
 
     double spacing = 80;
